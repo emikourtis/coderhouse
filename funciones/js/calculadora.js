@@ -8,9 +8,21 @@ luego crea un tercer prompt pidiendo el operador aritmetico
 Esta debe constatar q los 2 primeros valores sean numeros
 y el tercero sea un simbolo aritmetico
 si esta todo ok debera llamar a la primera funcion pasandoles los parametros y retornando el resultado de la operacion
-
 */
 let operador = '';
+
+let suma = function(numA, numB){
+    return numA + numB
+};
+let resta = function(numA, numB){
+    return numA - numB
+};
+let multiplicacion = function(numA, numB){
+    return numA * numB
+};
+let division = function(numA, numB){
+    return numA / numB
+};
 
 
 let calculadora = function (numA, numB) {
@@ -20,13 +32,13 @@ let calculadora = function (numA, numB) {
     
     switch (operador) {
         case '+' || 'mas':
-            return console.log(numA + numB);
+            return console.log(suma);
         case '-' || 'resta':
-            return console.log(numA - numB);
+            return console.log(resta);
         case '*' || 'multiplicacion':
-            return console.log(numA * numB);
+            return console.log(multiplicacion);
         case '/' || 'division':
-            return console.log(numA / numB);
+            return console.log(division);
         default:
             return 'error 2';
     }
@@ -34,4 +46,6 @@ let calculadora = function (numA, numB) {
 
 
 calculadora();
+
+
 
